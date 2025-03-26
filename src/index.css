@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    /* Banner background colors */
+    --color-banner-background: #0a0a14;
+    --color-banner-gradient-1: #7d2891;
+    --color-banner-gradient-2: #0e8575;
+    --color-banner-gradient-3: #0300b1ad;
+    /* Site-wide colors */
+    --color-site-bg: #14141e;
+    --color-overlay: #14141edc;
+    /* Fonts */
+    --font-display: "Arvo", "Monospace";
+}
+
+body {
+    background-color: var(--color-site-bg);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

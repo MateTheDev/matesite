@@ -1,0 +1,39 @@
+[[redirects]]
+  from = "/about"
+  to = "/src/pages/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/src/pages/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/src/pages/projects.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ily"
+  to = "/src/pages/ily/ily.html"
+  status = 200
+
+[[redirects]]
+  from = "/timeline"
+  to = "/src/pages/ily/timeline.html"
+  status = 200
+
+[[redirects]]
+  from = "/future"
+  to = "/src/pages/ily/year.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/src/pages/ily/gallery.html"
+  status = 200
