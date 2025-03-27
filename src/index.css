@@ -15,6 +15,11 @@
 
 body {
     background-color: var(--color-site-bg);
+    overflow: hidden;
+}
+
+.container-site {
     overflow-x: hidden;
     overflow-y: scroll;
+    width: 100%;
 }

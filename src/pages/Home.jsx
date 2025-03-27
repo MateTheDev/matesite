@@ -5,8 +5,10 @@ function Home() {
 
   return (
     <>
-    <WelcomeBanner />
-    <Content />
+    <div className="container-site">
+      <WelcomeBanner />
+      <Content />
+    </div>
     </>
   )
 }
