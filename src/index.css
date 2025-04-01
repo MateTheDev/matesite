@@ -1,25 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-    /* Banner background colors */
-    --color-banner-background: #0a0a14;
-    --color-banner-gradient-1: #7d2891;
-    --color-banner-gradient-2: #0e8575;
-    --color-banner-gradient-3: #0300b1ad;
-    /* Site-wide colors */
-    --color-site-bg: #14141e;
-    --color-overlay: #14141edc;
-    /* Fonts */
-    --font-display: "Arvo", "Monospace";
+    /* FONTS */
+    --font-logo: 'Andada Pro';
+    --font-heading: 'Geist';
+    --font-body: 'IBM Plex Sans';
+    --font-code: 'JetBrains Mono';
+
+    /* COLORS */
+    --color-primary: #008080;
+    --color-secondary: #bf55ec;
+    --color-background: #0a0a0f;
+    --color-panels: #141419;
+    --color-panel-border: #0f0f14;
+    --color-font-col: #f5f5f5;
+    --color-success: #00944a;
+    --color-error: #9c0027;
+    --color-info: #007c9c;
 }
 
 body {
-    background-color: var(--color-site-bg);
-    overflow: hidden;
-}
-
-.container-site {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
+    background-color: var(--color-background);
+    color: var(--color-font-col);
+    font-family: 'IBM Plex Sans';
 }
