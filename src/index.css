@@ -24,3 +24,12 @@ body {
     color: var(--color-font-col);
     font-family: 'IBM Plex Sans';
 }
+
+p {
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+h2 {
+    letter-spacing: -0.05em;
+}
