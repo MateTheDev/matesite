@@ -2,7 +2,7 @@ import { Link } from "react-router"
 
 function Footer() {
     return (
-        <footer className="flex-col items-center justify-center bg-panels border-t-4 border-panel-border w-full py-[20px] absolute bottom-0 left-0">
+        <footer className="flex-col items-center justify-center bg-panels border-t-4 border-panel-border w-full py-[20px]">
             <h1 className="logo font-logo font-bold text-[26px] md:text-[30px] tracking-[0.02em] text-center pb-7"><Link to="/">MateTheDev</Link></h1>
             <div className="right-icons">
                 <div className="icons">
