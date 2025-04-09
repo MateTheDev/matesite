@@ -26,6 +26,10 @@ body {
     font-family: 'IBM Plex Sans';
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
 p {
     line-height: 24px;
     letter-spacing: 0;
@@ -43,4 +47,8 @@ h2 {
 
 .tabButton:hover {
     transform: scale(105%);
+}
+
+.break {
+    flex-basis: 100%;
 }

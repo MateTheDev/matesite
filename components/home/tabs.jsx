@@ -13,14 +13,14 @@ function Tabs() {
                 </TabList>
                 <TabPanels>
                     <TabPanel className="flex justify-center items-center">
-                        <div className="card-container md:flex gap-[48px] flex-wrap">
-                            <div className="card flex-1/2">
+                        <div className="card-container w-full md:flex gap-x-[48px] gap-y-[12px] flex-wrap justify-center">
+                            <div className="card flex-1 max-w-[400px]">
                                 <h2 className="mt-[48px] mb-[12px]">Introduction</h2>
-                                <p className='text-justify max-w-[400px] mx-[22px]'>I am an aspiring software and web developer based in Budapest, Hungary. Since 2021, I have been learning various programming languages and I have worked on quite a few of my personal projects, like the site you are seeing right now. I am currently studying in NJIT.</p>
+                                <p className='text-justify mx-[22px]'>I am an aspiring software and web developer based in Budapest, Hungary. Since 2021, I have been learning various programming languages and I have worked on quite a few of my personal projects, like the site you are seeing right now. I am currently studying in NJIT.</p>
                             </div>
-                            <div className="card grid place-items-center">
+                            <div className="card max-w-[400px] flex-1 grid place-items-center">
                                 <h2 className="mt-[48px] mb-[12px]">Skills</h2>
-                                <table className='w-74'>
+                                <table className='min-w-74'>
                                         <tr className='h-10'>
                                             <td><svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-html size-[30px] stroke-primary"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 16v-8l2 5l2 -5v8" /><path d="M1 16v-8" /><path d="M5 8v8" /><path d="M1 12h4" /><path d="M7 8h4" /><path d="M9 8v8" /><path d="M20 8v8h3" /></svg></td>
                                             <td className='text-left'>HTML</td>
@@ -52,7 +52,22 @@ function Tabs() {
                                             <td className="level text-right">Beginner</td>
                                         </tr>
                                 </table>
-                            </div>              
+                            </div>
+                            <div className="break h-0"></div>
+                            <div className="card w-full">
+                                <h2 className="mt-[48px] mb-[12px]">Notable Projects</h2>
+                                <p className='text-center mx-[22px] mb-[12px]'>These projects are just examples of the many others I have made. For other projects, check out the <b>Projects</b> tab.</p>
+                                <div className="projects-preview grid place-items-center grid-flow-col grid-rows-1 w-full">
+                                    <div className="project-preview flex gap-x-10 m-[12px] max-w-[640px] max-h-[162px] border-2 border-panel-border bg-panels rounded-[12px]">
+                                        <img className='flex-1 max-w-[250px] p-3' src="/assets/car.jpg" alt=""></img>
+                                        <div className="side max-w-[250px]">
+                                            <h3 className='mb-[12px] text-left font-bold text-[20px]'>PassGen</h3>
+                                            <p className='w-fit text-left mb-[12px]'>A custom-made password generator, for those who forget their passwords easily.</p>
+                                            <p className='w-fit text-left'>Released: 2024.02.22.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </TabPanel>
                     <TabPanel>Projects - To be added</TabPanel>
