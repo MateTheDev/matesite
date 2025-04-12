@@ -57,13 +57,29 @@ function Tabs() {
                             <div className="card w-full">
                                 <h2 className="mt-[48px] mb-[12px]">Notable Projects</h2>
                                 <p className='text-center mx-[22px] mb-[12px]'>These projects are just examples of the many others I have made. For other projects, check out the <b>Projects</b> tab.</p>
-                                <div className="projects-preview grid place-items-center grid-flow-col grid-rows-1 w-full">
-                                    <div className="project-preview flex gap-x-10 m-[12px] max-w-[640px] max-h-[162px] border-2 border-panel-border bg-panels rounded-[12px]">
-                                        <img className='flex-1 max-w-[250px] p-3' src="/assets/car.jpg" alt=""></img>
+                                <div className="projects-preview gap-3 md:flex justify-center w-full">
+                                    <div className="project-preview grid place-items-center md:flex gap-10 m-[12px] p-6 border-2 border-panel-border bg-panels rounded-[12px]">
+                                        <img className='flex-1 object-contain object-center w-[250px] max-w-[250px]' src="/assets/car.jpg" alt=""></img>
                                         <div className="side max-w-[250px]">
-                                            <h3 className='mb-[12px] text-left font-bold text-[20px]'>PassGen</h3>
-                                            <p className='w-fit text-left mb-[12px]'>A custom-made password generator, for those who forget their passwords easily.</p>
-                                            <p className='w-fit text-left'>Released: 2024.02.22.</p>
+                                            <h3 className='mb-[12px] text-center md:text-left font-bold md:text-[20px]'>PassGen</h3>
+                                            <p className='w-fit text-center md:text-left mb-[12px]'>A pseudo random password generator, that creates a password from an entered phrase.</p>
+                                            <p className='w-full md:w-fit text-center md:text-left'>Released: 2024.02.22.</p>
+                                        </div>
+                                    </div>
+                                    <div className="project-preview grid place-items-center md:flex gap-10 m-[12px] p-6 border-2 border-panel-border bg-panels rounded-[12px]">
+                                        <img className='flex-1 object-contain object-center w-[250px] max-w-[250px]' src="/assets/car.jpg" alt=""></img>
+                                        <div className="side max-w-[250px]">
+                                            <h3 className='mb-[12px] text-center md:text-left font-bold md:text-[20px]'>PassGen</h3>
+                                            <p className='w-fit text-center md:text-left mb-[12px]'>A pseudo random password generator, that creates a password from an entered phrase.</p>
+                                            <p className='w-full md:w-fit text-center md:text-left'>Released: 2024.02.22.</p>
+                                        </div>
+                                    </div>
+                                    <div className="project-preview grid place-items-center md:flex gap-10 m-[12px] p-6 border-2 border-panel-border bg-panels rounded-[12px]">
+                                        <img className='flex-1 object-contain object-center w-[250px] max-w-[250px]' src="/assets/car.jpg" alt=""></img>
+                                        <div className="side max-w-[250px]">
+                                            <h3 className='mb-[12px] text-center md:text-left font-bold md:text-[20px]'>PassGen</h3>
+                                            <p className='w-fit text-center md:text-left mb-[12px]'>A pseudo random password generator, that creates a password from an entered phrase.</p>
+                                            <p className='w-full md:w-fit text-center md:text-left'>Released: 2024.02.22.</p>
                                         </div>
                                     </div>
                                 </div>
