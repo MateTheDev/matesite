@@ -86,7 +86,22 @@ function Tabs() {
                             </div>
                         </div>
                     </TabPanel>
-                    <TabPanel>Projects - To be added</TabPanel>
+                    <TabPanel className="flex-col justify-center items-center">
+                        <h2>All projects</h2>
+                        <div className="downloadable m-6">
+                            <h3 className="text-[20px]">Downloadable</h3>
+                            <div className="project-list flex justify-evenly m-4">
+                                <div className="project max-w-2xs p-5 bg-panels rounded-[12px]">
+                                    <h4 className="project-name text-[18px] mb-6">Password Generator</h4>
+                                    <p className="description text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolores maxime itaque autem corporis accusantium inventore culpa repudiandae doloremque voluptates atque, aut aliquam doloribus neque. Suscipit pariatur laborum error eius.</p>
+                                    <div className="buttons flex justify-evenly mt-3">
+                                        <button className="bg-panel-in-panel border-2 border-panel-border">Download</button>
+                                        <button className="bg-panel-in-panel border-2 border-panel-border">Source Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </TabPanel>
                     <TabPanel>Services - To be added</TabPanel>
                 </TabPanels>
             </TabGroup>
