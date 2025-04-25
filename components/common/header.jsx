@@ -1,29 +1,35 @@
-import { Link } from "react-router"
+import { useState } from 'react';
+import PopUp from './popup';
+import { AnimatePresence, motion } from "framer-motion";
+
 
 function Header() {
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <>
-            <div className="navbar bg-panels md:border-panel-border md:border-b-4 py-[10px] md:py-[12px] px-[36px] flex flex-row items-center justify-center md:justify-between">
-                <h1 className="logo font-logo font-bold text-[28px] md:text-[38px] tracking-[0.02em]"><Link to="/">MateTheDev</Link></h1>
-                <nav className="header-buttons hidden md:block">
-                    <ul className="flex flex-row gap-[24px]">
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[20px]"><Link to="/projects">Projects</Link></li>
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[20px]"><Link to="/about">About me</Link></li>
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[20px]"><Link to="/contact">Contact</Link></li>
-                    </ul>
-                </nav>
+        <div className="header bg-rich-black text-parchment flex justify-evenly items-center h-12">
+            <div className="logo flex-1/3 tracking-tighter font-logo text-3xl text-center">MateTheDev</div>
+            <div className="buttons flex-1/3">
+                <ul className="flex gap-10 tracking-wide justify-center">
+                    <li className="cursor-pointer underline-anim"></li>
+                    <li className="cursor-pointer underline-anim">Projects</li>
+                    <li className="cursor-pointer underline-anim">Contact</li>
+                    <li className="cursor-pointer underline-anim">Major Projects</li>
+                </ul>
             </div>
-            <div className="navbar-mobile bg-panel-border flex flex-row items-center justify-center py-[5px] md:hidden">
-                <nav className="header-buttons md:hidden">
-                    <ul className="flex flex-row gap-[24px]">
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[16px]"><Link to="/projects">Projects</Link></li>
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[16px]"><Link to="/about">About me</Link></li>
-                        <li className="hover:text-primary transition ease-in-out duration-300 text-[16px]"><Link to="/contact">Contact</Link></li>
-                    </ul>
-                </nav>
+            <div className="login flex-1/3 text-center tracking-wide">
+                <button onClick={() => setShowModal(true)} className="bg-dark-cyan text-rich-black rounded-xl px-2 py-0.5 hover:bg-dark-cyan/85 active:bg-dark-cyan/70">Log in</button>
             </div>
+        </div>
+        <AnimatePresence>
+            {showModal && 
+            <motion.div key="modal" initial={{ opacity: 0 }}animate={{ opacity: 1 }}exit={{ opacity: 0 }}transition={{ duration: 0.3 }}>
+                <PopUp onClose={() => setShowModal(false)} />
+            </motion.div>}
+        </AnimatePresence>
         </>
     )
 }
 
-export default Header
+export default Header;

@@ -1,12 +1,11 @@
-import HomeHero from "../../components/home/hero"
-import Tabs from "../../components/home/tabs"
+import Header from "../../components/common/header"
 
 function Home() {
-
   return (
     <>
-      <HomeHero />
-      <Tabs />
+      <div className="relative">
+        <Header />
+      </div>
     </>
   )
 }
